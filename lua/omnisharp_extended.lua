@@ -163,8 +163,8 @@ M.handle_locations = function(locations, offset_encoding)
       vim.api.nvim_command("copen")
       return true
     else
-      -- utils.jump_to_location(locations[1], fetched[locations[1].uri].bufnr)
-      vim.lsp.util.jump_to_location(locations[1], offset_encoding)
+      utils.jump_to_location(locations[1], fetched[locations[1].uri].bufnr)
+      -- vim.lsp.util.jump_to_location(locations[1], offset_encoding)
       return true
     end
   else
